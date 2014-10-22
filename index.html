@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Foundation 4 Off-Canvas Navigation</title>
+
+
+  <link rel="stylesheet" href="stylesheets/app.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+  <script src="javascripts/vendor/custom.modernizr.js"></script>
+
+</head>
+
+<body>
+  <nav id="off-canvas-nav">
+    <a href="#off-canvas-nav" class="menu-link"><i class="fa fa-navicon fa-2x"></i></a>
+    <div class="panel">
+      <ul>
+        <h4><span><a href="#">Title</a></span></h4>
+        <li><a href="#">Home</a>
+        </li>
+        <li><a href="#">About</a>
+        </li>
+        <li><a href="#">Contact</a>
+        </li>
+        <li><a href="#">Blog</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="canvas-wrapper">
+    <div class="row">
+      <div class="large-12 columns">
+        <h2>Foundation 4 Off-Canvas Navigation</h2>
+        <p>This is a simple proof of concept application of <a href="//blog.tomri.ch/super-simple-off-canvas-menu-navigation/">Tom Rich's Super simple off-canvas navigation</a>, albeit with a few slight modifications.</p>
+        <hr />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-8 columns">
+        <h3>The Recipe</h3>
+        <div class="panel">
+          <ul>
+            <li>This example is built on a generic <a href="//compass-style.org/">Compass</a> install of <a href="//foundation.zurb.com/docs/v/4.3.2/">Foundation [4.3.2]</a>. In fact, this page is a slightly modified version of the auto-generated <code>index.html</code> page.</li>
+            <li>The <a href="//fortawesome.github.io/Font-Awesome/">Font Awesome</a> library is already linked in the <code>head</code> of this page. It is used to generate the navicon.</li>
+            <li>The jQuery in Tom's example has been slightly modified, and can be found just above the closing <code>body</code> tag of this page.</li>
+          </ul>
+        </div>
+        <hr>
+        <figure>
+          <a class="th radius"><img src="//blog.tomri.ch/content/images/2014/Jan/off_canvas.gif"></a>
+          <caption>Tom's awesome example</caption>
+        </figure>
+
+
+      </div>
+
+      <div class="large-4 columns">
+        <h4>Getting Started</h4>
+        <p>Simply download the code on github, explore the individual pieces, or compare this example with <a href="//blog.tomri.ch/super-simple-off-canvas-menu-navigation/">Tom's example</a>.</p>
+
+        <h4>Other Resources</h4>
+        <p>You may find these resources useful:</p>
+        <ul class="disc">
+          <li><a href="//twitter.com/paskainos">@paskainos</a>
+            <br />Ping us on Twitter if you have questions about this demonstration. If you build something with this we'd love to see it (and send you a totally boss sticker).</li>
+          <li><a href="//foundation.zurb.com/docs/v/4.3.2/">Foundation [4.3.2] Documentation</a>
+            <br />Everything you need to know about using the framework.</li>
+          <li><a href="//github.com/zurb/foundation">Foundation on Github</a>
+            <br />Latest code, issue reports, feature requests and more.</li>
+          <li><a href="//twitter.com/foundationzurb">@foundationzurb</a>
+            <br />Ping Zurb on Twitter if you have questions about Foundation.</li>
+          <li><a href="//compass-style.org/">Compass-style.org</a>
+            <br />Compass is an open-source CSS Authoring Framework.</li>
+          <li><a href="//blog.tomri.ch/super-simple-off-canvas-menu-navigation/">Super simple off-canvas navigation</a> by Tom Rich
+            <br />The post title says it all.</li>
+          <li><a href="//fortawesome.github.io/Font-Awesome/">Font Awesome</a> icon library
+            <br />Font Awesome, the iconic font and CSS toolkit.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  document.write('<script src=' +
+    ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
+    '.js><\/script>')
+  </script>
+
+  <script src="javascripts/foundation/foundation.js"></script>
+
+  <script src="javascripts/foundation/foundation.section.js"></script>
+
+  <script src="javascripts/foundation/foundation.forms.js"></script>
+
+  <script src="javascripts/foundation/foundation.magellan.js"></script>
+
+  <script src="javascripts/foundation/foundation.cookie.js"></script>
+
+  <script src="javascripts/foundation/foundation.reveal.js"></script>
+
+  <script src="javascripts/foundation/foundation.topbar.js"></script>
+
+  <script src="javascripts/foundation/foundation.tooltips.js"></script>
+
+  <script src="javascripts/foundation/foundation.alerts.js"></script>
+
+  <script src="javascripts/foundation/foundation.placeholder.js"></script>
+
+  <script src="javascripts/foundation/foundation.clearing.js"></script>
+
+  <script src="javascripts/foundation/foundation.joyride.js"></script>
+
+  <script src="javascripts/foundation/foundation.abide.js"></script>
+
+  <script src="javascripts/foundation/foundation.dropdown.js"></script>
+
+  <script src="javascripts/foundation/foundation.orbit.js"></script>
+
+  <script src="javascripts/foundation/foundation.interchange.js"></script>
+
+
+  <script>
+  $(document).foundation();
+  </script>
+
+  <!-- add off-canvas-nav toggle -->
+  <script type="text/javascript">
+  // bind click event to all internal page anchors
+  $(".menu-link").bind("click", function (e) {
+      // prevent default action and bubbling
+      e.preventDefault();
+      e.stopPropagation();
+      $("#off-canvas-nav").toggleClass("active");
+      $("#canvas-wrapper").toggleClass("active");
+  });
+  </script>
+
+</body>
+
+</html>
+
