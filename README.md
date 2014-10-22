@@ -1,7 +1,7 @@
 foundation-4-off-canvas
 =======================
 
-####A simple off-canvas navigation for Foundation [4].
+####A simple off-canvas navigation for Foundation [4] — [see the example here](//paskainos.github.io/foundation-4-off-canvas/).
 
 This is a simple proof of concept application using Tom Rich's [Super simple off-canvas navigation](//blog.tomri.ch/super-simple-off-canvas-menu-navigation/) example. The need arises for Foundation 4 users in particular, since there's off-canvas functionality in Foundation 3 & 5, but not version 4.
 
